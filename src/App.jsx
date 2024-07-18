@@ -1,6 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom"
 import Home from "./pages/Home.page"
 import Nav from "./components/Nav.section"
+import About from "./pages/About.page"
 
 
 function App() {
@@ -9,9 +10,11 @@ function App() {
     <>
       <BrowserRouter>
       <Nav />
-        <Routes>
+        <Home />
+        <About />
+        {/* <Routes>
           <Route path="/" element={<Home />} />
-        </Routes>
+        </Routes> */}
       </BrowserRouter>
     </>
   )
