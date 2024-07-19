@@ -4,7 +4,7 @@ const Nav = () => {
     return (
         <nav className="border-b-2 border-white sticky top-0 w-full bg-gradient-to-r from-[#6e3333] via-[#381919] to-[#6b3737] text-[2rem] text-white py-1 px-10 flex font-squada">
             <div className="flex text-[3rem] ">
-                <Link to="/" className="bg-gradient-to-b from-[#6e494280] to-[#eb655c] text-transparent bg-clip-text">GHELO</Link>
+                <Link to="/" className="bg-gradient-to-b from-[#f07a7a80] to-[#bb3026] text-transparent bg-clip-text">GHELO</Link>
             </div>
             <ul className="w-full text-[2rem] flex items-center justify-center gap-16">
                 <Link>HOME</Link>
