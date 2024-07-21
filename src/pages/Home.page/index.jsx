@@ -2,7 +2,7 @@ const Home = () => {
     return (
         <div className="w-full h-screen bg-gradient-to-r from-[#070505] to-[#460f0d] flex items-center justify-center">
             <div className="w-[40%] flex items-center justify-center h-full">
-                <div className="w-3/4 rounded-full">
+                <div className="w-3/4 rounded-full bg-gradient-to-r from-[#070505] to-[#310806]">
                     <img src="https://ik.imagekit.io/ghelowee/Portfolio/img-removebg.png?updatedAt=1721212130447" alt="profile" 
                     className="rounded-full"/>
                 </div>
