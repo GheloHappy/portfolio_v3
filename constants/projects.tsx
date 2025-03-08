@@ -11,7 +11,8 @@ import {
     SiNodedotjs,
     SiMysql,
     SiEclipseide,
-    SiSqlite
+    SiSqlite,
+    SiPostgresql
 } from 'react-icons/si'
 
 export const projectDetails = [
@@ -63,6 +64,17 @@ export const projectDetails = [
             { icon: DiVisualstudio, name: 'VS Code' },
             { icon: TbBrandCSharp, name: 'C#' },
             { icon: TbSql, name: 'SQL Server' }
+        ]
+    },
+    {
+        label: "Happy Snippet",
+        summary: "A full-stack web application designed for developers to store and manage their code snippets and scripts. Features include syntax highlighting, categorization, and searchable snippets. Built with React for the frontend, Node.js for the backend, and PostgreSQL for efficient data storage and retrieval.",
+        link: "https://snippet.ghelo.site",
+        stacks: [
+            { icon: SiReact, name: 'React' },
+            { icon: SiJavascript, name: 'Javascript' },
+            { icon: SiNodedotjs, name: 'Node.js' },
+            { icon: SiPostgresql, name: 'PostgreSQL' }
         ]
     },
     {
