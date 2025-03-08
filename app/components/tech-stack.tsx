@@ -6,7 +6,11 @@ import { Others } from "@/constants/others";
 const TechStack = () => {
     return (
         <>
-            <div className="boder-[#a0a4ad] shadow-md solid rounded p-5 w-full flex flex-col">
+            <div style={{
+                backgroundColor: 'var(--card-bg)',
+                color: 'var(--card-text)',
+                borderColor: 'var(--border)'
+            }} className="shadow-md solid rounded p-5 w-full flex flex-col ">
                 <div className="mb-5">
                     <h2 className="text-xl font-bold mb-3">Languages</h2>
                     <div className="flex flex-wrap gap-2">
@@ -19,7 +23,11 @@ const TechStack = () => {
                     </div>
                 </div>
             </div>
-            <div className="boder-[#a0a4ad] shadow-md solid rounded p-5 w-full flex flex-col">
+            <div style={{
+                backgroundColor: 'var(--card-bg)',
+                color: 'var(--card-text)',
+                borderColor: 'var(--border)'
+            }} className="shadow-md solid rounded p-5 w-full flex flex-col ">
                 <div className="mb-5">
                     <h2 className="text-xl font-bold mb-3">Frameworks</h2>
                     <div className="flex flex-wrap gap-2">
@@ -32,7 +40,11 @@ const TechStack = () => {
                     </div>
                 </div>
             </div>
-            <div className="boder-[#a0a4ad] shadow-md solid rounded p-5 w-full flex flex-col">
+            <div style={{
+                backgroundColor: 'var(--card-bg)',
+                color: 'var(--card-text)',
+                borderColor: 'var(--border)'
+            }} className="shadow-md solid rounded p-5 w-full flex flex-col ">
                 <div className="mb-5">
                     <h2 className="text-xl font-bold mb-3">Databases</h2>
                     <div className="flex flex-wrap gap-2">
@@ -45,7 +57,11 @@ const TechStack = () => {
                     </div>
                 </div>
             </div>
-            <div className="boder-[#a0a4ad] shadow-md solid rounded p-5 w-full flex flex-col">
+            <div style={{
+                backgroundColor: 'var(--card-bg)',
+                color: 'var(--card-text)',
+                borderColor: 'var(--border)'
+            }} className="shadow-md solid rounded p-5 w-full flex flex-col ">
                 <div className="mb-5">
                     <h2 className="text-xl font-bold mb-3">Others</h2>
                     <div className="flex flex-wrap gap-2">

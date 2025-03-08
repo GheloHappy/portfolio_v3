@@ -2,7 +2,12 @@ import { projectDetails } from "@/constants/projects";
 
 export default function Projects() {
     return (
-        <div className="w-full p-5 shadow-md rounded">
+        <div className="w-full p-5 shadow-md rounded"
+            style={{
+                backgroundColor: 'var(--card-bg)',
+                color: 'var(--card-text)',
+                borderColor: 'var(--border)'
+            }}>
             <h2 className="text-2xl font-bold mb-6">Featured Projects</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 {projectDetails.map((project, index) => (
@@ -11,7 +16,7 @@ export default function Projects() {
                             <div className="flex justify-between items-center mb-2">
                                 <h3 className="text-xl font-semibold">{project.label}</h3>
                                 {project.link && (
-                                    <a 
+                                    <a
                                         href={project.link}
                                         target="_blank"
                                         rel="noopener noreferrer"
@@ -21,12 +26,12 @@ export default function Projects() {
                                     </a>
                                 )}
                             </div>
-                            <p className="text-gray-600 text-sm mb-4">{project.summary}</p>
+                            <p className="text-sm mb-4">{project.summary}</p>
                             <div className="flex flex-wrap gap-3">
                                 {project.stacks.map((stack, idx) => (
-                                    <div 
-                                        key={idx} 
-                                        className="flex items-center gap-1 text-gray-700"
+                                    <div
+                                        key={idx}
+                                        className="flex items-center gap-1 "
                                         title={stack.name}
                                     >
                                         <stack.icon className="text-xl" />

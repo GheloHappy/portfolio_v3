@@ -4,6 +4,16 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Ghelonico Maligaya",
   description: "Portfolio of Ghelonico Maligaya",
+  icons: {
+    icon: [
+      {
+        url: '/happy.webp',
+        type: 'image/webp',
+      },
+    ],
+    shortcut: '/happy.webp',
+    apple: '/happy.webp',
+  },
 };
 
 export default function RootLayout({
@@ -12,15 +22,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link href="https://fonts.googleapis.com/css2?family=Jersey+10&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Squada+One&display=swap" rel="stylesheet" />
-      </head>
-      <body
-        className={`antialiased`}
-      >
+    <html lang="en" suppressHydrationWarning>
+      <body>
         {children}
       </body>
     </html>
