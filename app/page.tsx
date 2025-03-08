@@ -11,7 +11,7 @@ export default function Home() {
     <>
       <div className="w-full bg-[#ffffff] flex flex-col justify-center items-center text-black p-5">
         <div className="w-[60%] p-2 flex gap-5 outfit">
-          <div className="w-[30%] flex flex-col items-center justify-center gap-5">
+          <div className="w-[30%] flex flex-col items-center gap-5">
             <div className="boder shadow-md solid rounded p-5 w-full flex flex-col">
               <div className="w-full bg-[#a0a4ad] rounded-full flex items-center justify-center flex-col">
                 <img src="https://ik.imagekit.io/ghelowee/Portfolio/img-removebg.png?updatedAt=1741418335430" alt="profile"

@@ -2,12 +2,16 @@ import { DiVisualstudio } from 'react-icons/di'
 import { TbBrandCSharp, TbSql } from 'react-icons/tb'
 import { FaJava } from 'react-icons/fa'
 import { RiNextjsFill } from 'react-icons/ri'
-import { 
-    SiAndroidstudio,  
-    SiTypescript,  
-    SiJavascript,  
-    SiReact, 
-    SiNodedotjs, 
+import { TbBrandReactNative } from 'react-icons/tb'
+import {
+    SiAndroidstudio,
+    SiTypescript,
+    SiJavascript,
+    SiReact,
+    SiNodedotjs,
+    SiMysql,
+    SiEclipseide,
+    SiSqlite
 } from 'react-icons/si'
 
 export const projectDetails = [
@@ -17,21 +21,36 @@ export const projectDetails = [
         link: "https://cmdiorder.monheim.app",
         stacks: [
             { icon: DiVisualstudio, name: 'Visual Studio' },
-            { icon: TbBrandCSharp, name: 'C#' },
             { icon: TbSql, name: 'SQL Server' },
-            { icon: SiReact, name: 'React' },
+            { icon: SiMysql, name: 'MySQL' },
+            { icon: TbBrandReactNative, name: 'React Native' },
             { icon: SiTypescript, name: 'TypeScript' },
             { icon: SiJavascript, name: 'Javascrpt' },
             { icon: SiNodedotjs, name: 'Node.js' }
         ]
     },
     {
-        label: "B2B Converter",
-        summary: "Converts .csv, .xml files from Client Portals or Iconnect for directly processing of Purchase Order",
+        label: "MLDI Ordering System",
+        summary: "An enterprise-level ordering system tailored for MLDI's business processes. Features include real-time inventory tracking, automated order processing, and a React Native mobile application with offline capabilities. The system has significantly improved order accuracy and reduced processing time by eliminating manual data entry.",
+        link: "https://mldiorder.monheim.app",
         stacks: [
             { icon: DiVisualstudio, name: 'Visual Studio' },
-            { icon: TbBrandCSharp, name: 'C#' },
-            { icon: TbSql, name: 'SQL Server' }
+            { icon: TbSql, name: 'SQL Server' },
+            { icon: SiReact, name: 'React' },
+            { icon: SiJavascript, name: 'Javascript' },
+            { icon: SiNodedotjs, name: 'Node.js' }
+        ]
+    },
+    {
+        label: "Online Timekeeping Monitoring",
+        summary: "A web-based time tracking solution that enables employees to monitor their daily attendance records, view time logs, and manage leave requests in real-time. Built with React for a responsive interface and Node.js backend, the system provides transparent attendance tracking and streamlines the leave management process.",
+        link: "https://timekeeping.monheim.app",
+        stacks: [
+            { icon: DiVisualstudio, name: 'Visual Studio' },
+            { icon: TbSql, name: 'SQL Server' },
+            { icon: SiReact, name: 'React' },
+            { icon: SiJavascript, name: 'Javascript' },
+            { icon: SiNodedotjs, name: 'Node.js' }
         ]
     },
     {
@@ -44,6 +63,15 @@ export const projectDetails = [
             { icon: DiVisualstudio, name: 'VS Code' },
             { icon: TbBrandCSharp, name: 'C#' },
             { icon: TbSql, name: 'SQL Server' }
+        ]
+    },
+    {
+        label: "Van Sales",
+        summary: "A Sales Force Automation (SFA) app developed to facilitate paperless sales transactions conducted from delivery vans, using tablets paired with Bluetooth printers for seamless and eco-friendly order processing.",
+        stacks: [
+            { icon: SiEclipseide, name: 'Eclipse' },
+            { icon: FaJava, name: 'Java' },
+            { icon: SiSqlite, name: 'SQLite' }
         ]
     },
     {
@@ -63,5 +91,14 @@ export const projectDetails = [
             { icon: TbBrandCSharp, name: 'C#' },
             { icon: TbSql, name: 'SQL Server' }
         ]
-    }
+    },
+    {
+        label: "B2B Converter",
+        summary: "Converts .csv, .xml files from Client Portals or Iconnect for directly processing of Purchase Order",
+        stacks: [
+            { icon: DiVisualstudio, name: 'Visual Studio' },
+            { icon: TbBrandCSharp, name: 'C#' },
+            { icon: TbSql, name: 'SQL Server' }
+        ]
+    },
 ]

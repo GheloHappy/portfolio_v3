@@ -3,7 +3,7 @@ import { projectDetails } from "@/constants/projects";
 export default function Projects() {
     return (
         <div className="w-full p-5 shadow-md rounded">
-            <h2 className="text-2xl font-bold mb-6">Projects</h2>
+            <h2 className="text-2xl font-bold mb-6">Featured Projects</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 {projectDetails.map((project, index) => (
                     <div key={index} className="border shadow-md solid rounded-lg overflow-hidden hover:shadow-lg transition-shadow">
