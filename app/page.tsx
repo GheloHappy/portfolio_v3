@@ -14,9 +14,9 @@ export default function Home() {
       <div style={{ 
         backgroundColor: 'var(--background)',
         color: 'var(--text)'
-      }} className="w-full flex flex-col justify-center items-center p-5">
-        <div className="w-[60%] p-2 flex gap-5 outfit">
-          <div className="w-[30%] flex flex-col items-center gap-5 ">
+      }} className="w-full flex flex-col justify-center items-center p-2 md:p-5">
+        <div className="w-full md:w-[60%] md:p-2 flex md:flex-row flex-col gap-5 outfit">
+          <div className="w-full md:w-[30%] flex flex-col items-center gap-5 ">
             <div style={{
               backgroundColor: 'var(--card-bg)',
               color: 'var(--card-text)',
@@ -44,16 +44,32 @@ export default function Home() {
                 </div>
                 <hr className="mt-5 text-[#3a3939]" />
                 <div className="mt-5 flex flex-col items-start justify-start gap-1">
-                  <a className="flex gap-2 items-center justify-center" href="https://github.com/GheloHappy"><FaGithub />/GheloHappy</a>
-                  <a className="flex gap-2 items-center justify-center" href="https://www.linkedin.com/in/ghelonico-maligaya-52a3bb204/"><FaLinkedin />ghelonico-maligaya</a>
-                  <span className="flex gap-2 items-center justify-center"><SiGmail />ghelonicomaligaya111@gmail.com</span>
+                  <a 
+                    className="flex gap-2 items-center justify-center hover:text-blue-600" 
+                    href="https://github.com/GheloHappy"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <FaGithub />/GheloHappy
+                  </a>
+                  <a 
+                    className="flex gap-2 items-center justify-center hover:text-blue-600" 
+                    href="https://www.linkedin.com/in/ghelonico-maligaya-52a3bb204/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <FaLinkedin />ghelonico-maligaya
+                  </a>
+                  <span className="flex gap-2 items-center justify-center">
+                    <SiGmail />ghelonicomaligaya111@gmail.com
+                  </span>
                 </div>
               </div>
             </div>
             <TeckStack />
           </div>
 
-          <div className="w-[70%] flex flex-col items-ecenter gap-5">
+          <div className="w-full md:w-[70%] flex flex-col items-ecenter gap-5">
             <AboutMe />
             <Journey />
             <Projects />
