@@ -1,9 +1,15 @@
-import Image from "next/image";
+import Nav from "./components/nav"
+
 
 export default function Home() {
   return (
-    <div>
-      <h1>Next.js Image Component</h1>
-    </div>
+    <>
+      <div className="w-full bg-[#171717] flex flex-col justify-center items-center h-screen">
+        <div className="w-[70%] h-full p-2">
+          <Nav />
+          <h1 className="text-2xl text-white">Hello World</h1>
+        </div>
+      </div>
+    </>
   );
 }
