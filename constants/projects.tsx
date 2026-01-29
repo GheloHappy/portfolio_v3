@@ -19,6 +19,7 @@ export const projectDetails = [
     {
         label: "SARIKart",
         summary: "Ecommerce web application for customer orders with features like product browsing, shopping cart, and secure checkout.",
+        link: "https://sarikart.monheim.app",
         stacks: [
             { icon: DiVisualstudio, name: 'VS Code' },
             { icon: SiTypescript, name: 'TS' },
