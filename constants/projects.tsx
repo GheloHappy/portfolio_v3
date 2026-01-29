@@ -17,6 +17,17 @@ import {
 
 export const projectDetails = [
     {
+        label: "SARIKart",
+        summary: "Ecommerce web application for customer orders with features like product browsing, shopping cart, and secure checkout.",
+        stacks: [
+            { icon: DiVisualstudio, name: 'VS Code' },
+            { icon: SiTypescript, name: 'TS' },
+            { icon: SiNodedotjs, name: 'Node.js' },
+            { icon: SiReact, name: 'React' },
+            { icon: SiPostgresql, name: 'PostgreSQL' }
+        ]
+    },
+    {
         label: "CMDI Ordering System",
         summary: "A comprehensive web and mobile solution that streamlines the ordering process between agents and invoicers. The system features a responsive web interface and a React Native mobile app with offline synchronization capabilities, significantly reducing manual order processing time and improving operational efficiency.",
         link: "https://cmdiorder.monheim.app",
@@ -69,7 +80,7 @@ export const projectDetails = [
     {
         label: "Happy Snippet",
         summary: "A full-stack web application designed for developers to store and manage their code snippets and scripts. Features include syntax highlighting, categorization, and searchable snippets. Built with React for the frontend, Node.js for the backend, and PostgreSQL for efficient data storage and retrieval.",
-        link: "https://snippet.ghelo.site",
+        link: "https://snippet.ghelonico.site",
         stacks: [
             { icon: SiReact, name: 'React' },
             { icon: SiJavascript, name: 'Javascript' },
@@ -113,4 +124,5 @@ export const projectDetails = [
             { icon: TbSql, name: 'SQL Server' }
         ]
     },
+
 ]
