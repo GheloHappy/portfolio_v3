@@ -27,12 +27,10 @@ ENV NODE_ENV production
 RUN addgroup --system --gid 1001 nodejs
 RUN adduser --system --uid 1001 nextjs
 
-# Copy necessary files from builder
-COPY --from=builder /app/node_modules ./node_modules
-COPY --from=builder /app/package.json ./package.json
-COPY --from=builder /app/public ./public
-COPY --from=builder /app/.next/standalone ./
+# Copy standalone output and static files
+COPY --from=builder /app/.next/standalone/portfolio_v3 ./
 COPY --from=builder /app/.next/static ./.next/static
+COPY --from=builder /app/public ./public
 
 # Set ownership to non-root user
 USER nextjs
@@ -42,4 +40,4 @@ EXPOSE 5001
 
 # Start the application
 CMD ["node", "server.js"]
-#CMD ["npm", "run", "start"] 
+#CMD ["npm", "run", "start"]
